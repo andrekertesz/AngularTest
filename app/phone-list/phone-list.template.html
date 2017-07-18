@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <div class="row item-wrapper" ng-repeat="item in $ctrl.itemsData">
+    <div class="item-thumbnail-wrapper">
+      <span class="item-rank">{{item.ups}}</span>
+      <a href="{{item.url}}" class="item-thumbnail">
+        <img ng-src="{{item.thumbnail}}" alt />
+      </a>
+    </div>
+    <div class="item-content">
+      <a href="{{item.url}}" class="item-title">{{item.title}}</a>
+      <div class="item-info">
+        <p class="item-submitted">
+          submitted {{item.timestamp}} by
+          <a href="#">{{item.from}}</a>
+          to
+          <a href="#">{{item.to}}</a>
+        </p>
+        <p class="item-comments">{{item.comments}}</p>
+      </div>
+    </div>
+  </div>
+</div>
